@@ -1,0 +1,10 @@
+- name: run roles on remote box
+  hosts: localhost
+  become: true
+  roles:
+  - ubuntu_update
+  - github
+  - nginx
+  - prometheus
+  - node_exporter
+  - grafana
